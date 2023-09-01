@@ -1,0 +1,9 @@
+<div class="container">
+
+<h1>life-cycle works!</h1>
+<input type="text" #name (change)="data(name.value)">
+
+<app-life [name1]="getName" *ngIf="visible"></app-life>
+
+<button class="btn btn-danger" (click)="fun()">Distroy</button>
+</div> 
